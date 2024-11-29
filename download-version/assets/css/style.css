@@ -5230,7 +5230,7 @@ ol.wp-block-rss {
 }
 
 .header-links a:hover {
-  color: var(--theme-color);
+  color: #ccc !important;
 }
 
 .header-links b,
@@ -5258,7 +5258,7 @@ ol.wp-block-rss {
 
 .header-top {
   padding: 7px 0;
-  background-color: var(--theme-color2);
+  background-color: #0069c0 ;
   --body-color: #fff;
 }
 
