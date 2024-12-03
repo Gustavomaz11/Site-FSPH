@@ -5412,6 +5412,15 @@ ol.wp-block-rss {
   .header-layout1 .header-logo {
     padding: 15px 50px 15px 0;
     height: 90px;
+    
+  }
+  .header-logo img {
+    height: 5vh;
+    width: 90vw !important;
+  }
+
+  .mobile {
+    margin-top: 25rem !important;
   }
 }
 
