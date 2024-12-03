@@ -5423,6 +5423,18 @@ ol.wp-block-rss {
     margin-top: 25rem !important;
     padding: 10px !important;
   }
+
+  .euVouBtn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: .75rem !important;
+    font-size: 14px;
+  }
+
+  .agendaFundacao span {
+    width: 50vw;
+  }
 }
 
 /* Extra small devices */
