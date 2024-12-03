@@ -6267,7 +6267,7 @@ ol.wp-block-rss {
 }
 
 .info-box_link:hover {
-  color: var(--theme-color);
+  color: #fff;
 }
 
 .th-widget-location {
@@ -20442,6 +20442,19 @@ span.select2-selection.select2-selection--single:focus {
   padding: .5rem;
 }
 
+.counter-number,
+.number,
+.box-text {
+  color: #fff;
+}
+
+.menu-all-pages-container ul li a {
+  color: #969eb2 !important;
+}
+
+.menu-all-pages-container ul li a:hover {
+  color: #fff !important;
+}
 
 /* #oa3c79 
 Hexadecimal da fundação
