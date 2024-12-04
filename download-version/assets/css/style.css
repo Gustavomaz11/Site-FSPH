@@ -20547,6 +20547,13 @@ a:hover {
   background-color: #062c5c;
 }
 
+.contratoEstatal {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
 
 
 /* #oa3c79 
