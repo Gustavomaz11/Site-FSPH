@@ -120,21 +120,6 @@ Version: 1.0.0
   --section-title-space: 60px;
   --ripple-ani-duration: 5s;
   
-  /* paleta de cores HEMOSE */
-  --hemose-color: #e60104  ;
-  --hemose-color2: #f26a6c ;
-  --titulo-hemose: #4c0e13;
-  --body-hemose: #6b6b6b;
-  --smoke-hemose: #f8e8e8;
-  --smoke-hemose2: #fceeee;
-  --black-hemose: #3b0d0d;
-  --gray-hemose: #a8a8a8;
-  /* --white-color: #ffffff; */
-  --light-hemose: #f6d6d6;
-  --yellow-hemose: #f7a953;
-  --success-hemose: #1b8731;
-  --error-hemose: #b3080b;
-  --th-border-color-hemose: #e6b4b5;
 }
 
 /*------------------- 1.5. Typography -------------------*/
@@ -18218,7 +18203,11 @@ span.select2-selection.select2-selection--single:focus {
   background-color: var(--white-color);
   box-shadow: 0px 0px 10.6px rgba(97, 97, 97, 0.15);
   border-radius: 20px;
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  /* width: 35vw; */
+
   /* Extra small devices */
 }
 
@@ -18226,6 +18215,18 @@ span.select2-selection.select2-selection--single:focus {
   .faq-form2 {
     padding: 15px;
     padding-top: 25px;
+  }
+  .form-shape {
+    display: none;
+  }
+
+  .header-button #doadorBtn {
+    display: none;
+  }
+
+  .header-logo a img {
+    width: 7rem !important;
+    height: auto;
   }
 }
 
@@ -20544,13 +20545,18 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .agendamentoBtn {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
   background-color: var(--theme-color);
   color: var(--white-color);
-  font-weight: bold;
-  width: 100%;
-  padding: .5rem;
-  border: none;
-  border-radius: .5rem;
+  transition: .3s ease;
+}
+
+.agendamentoBtn:hover {
+  background-color: var(--title-color);
 }
 
 .saibaMaisBtn {
@@ -20561,3 +20567,76 @@ span.select2-selection.select2-selection--single:focus {
   border: 1px solid var(--theme-color);
   
 }
+
+.brand-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(204,204,204,1);
+  box-shadow: 0px 0px 6px 0px rgba(204,204,204,1);
+
+}
+
+.brand-box i {
+  font-size: 32px;
+  color: var(--theme-color);
+}
+
+.brand-box span {
+  color: var(--theme-color);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.brand-box .estoqueSangue {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+#agendamentoCampanha {
+  display: none;
+  transform: translate(-35%);
+  position: relative; /* Adicionado */
+  z-index: 0;
+}
+
+#agendamentoDoacaoIndividual {
+  position: relative; /* Adicionado */
+  z-index: 0;
+}
+
+.agendamentos {
+  display: flex;
+  flex-direction: row;
+}
+
+.alterarPosicaoImagem {
+  transform: translate(250%);
+  position: relative; /* Adicionado */
+  z-index: 55;
+}
+
+.voltarPosicaoImagem {
+  transform: translate(0);
+  position: relative; /* Adicionado */
+  z-index: 55;
+}
+
+
+#slideImage {
+  transition: .5s ease-out;
+  position: relative; /* Adicionado */
+  z-index: 55;
+}
+
+#alterarParaDoacao,
+#alterarParaCampanha {
+  color: var(--theme-color);
+  cursor: pointer;
+}
+
+

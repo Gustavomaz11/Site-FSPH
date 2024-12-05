@@ -55,6 +55,7 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/hemose.css">
     <script src="assets/js/slide.js" defer></script>
+    <script src="assets/js/transicao.js" defer></script>
 
 </head>
 
@@ -156,60 +157,58 @@
                         </a>
                     </div>
                     <!-- <p class="about-text">Subscribe to out newsletter today to receive latest news administrate cost effective for tactical data.</p>
-                    <p class="footer-info">
-                        <i class="fal fa-location-dot"></i>
-                        2478 Street City Ohio 90255
-                    </p>
-                    <p class="footer-info">
-                        <i class="fal fa-envelope"></i>
-                        <a href="mailto:info@mediax.com" class="info-box_link">info@mediax.com</a>
-                    </p>
-                    <p class="footer-info">
-                        <i class="fal fa-phone"></i>
-                        <a href="tel:+40276328246" class="info-box_link">+(402) 763 282 46</a>
-                    </p>
-                    <div class="th-social">
-                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
-                    </div> -->
+                <p class="footer-info">
+                    <i class="fal fa-location-dot"></i>
+                    2478 Street City Ohio 90255
+                </p>
+                <p class="footer-info">
+                    <i class="fal fa-envelope"></i>
+                    <a href="mailto:info@mediax.com" class="info-box_link">info@mediax.com</a>
+                </p>
+                <p class="footer-info">
+                    <i class="fal fa-phone"></i>
+                    <a href="tel:+40276328246" class="info-box_link">+(402) 763 282 46</a>
+                </p>
+                <div class="th-social">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                </div> -->
                 </div>
             </div>
             <div class="widget  ">
-                <h3 class="widget_title">Agendamento</h3>
-                <form action="mail.php" method="POST" class="appointment-form">
-                    
-                    <div class="row">
-                        <div class="form-group col-12">
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Digite seu nome Completo">
+                <h3 class="widget_title">Portal do Doador</h3>
+                <div class="newsletter-widget">
+                    <p class="footer-text">Acesse o seu portal</p>
+                    <form action="#" class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Digite seu Email" required="">
+                            <input class="form-control" type="password" placeholder="Digite sua Senha" required="">
                         </div>
-                        <div class="form-group col-12">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Digite o seu Email">
-                        </div>
-                        <div class="form-group col-12">
-                            <input type="tel" class="form-control" name="number" id="number" placeholder="Digite o seu melhor contato">
-                        </div>
-                        <div class="form-group col-6">
-                            <input type="text" class="date-pick form-control" name="date" id="date-pick" placeholder="Data">
-                        </div>
-                        <div class="form-group col-6">
-                            <input type="text" class="time-pick form-control" name="time" id="time-pick" placeholder="Hora">
-                        </div>
-                        <div class="form-btn col-12">
-                            <button class="agendamentoBtn">Agendar</button>
-                        </div>
+                        <button type="submit" class="submitBtn">Login</button>
+                        <button type="submit" class="submitBtn">Cadastre-se</button>
+                    </form>
+                    <div class="form-group">
+                        <input type="checkbox" id="checkboxagree" name="checkboxagree">
+                        <label for="checkboxagree">Lembrar Senha</label>
                     </div>
-                    <p class="form-messages mb-0 mt-3"></p>
-                </form>
+                    <div class="btn-group">
+                        <a href="https://play.google.com/" class="img-btn">
+                            <img src="assets/img/normal/apple_store.png" alt="icon">
+                        </a>
+                        <a href="https://play.google.com/" class="img-btn">
+                            <img src="assets/img/normal/play_store.png" alt="icon">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="popup-search-box d-none d-lg-block">
-
         <button class="searchClose"><i class="fal fa-times"></i></button>
         <form action="#">
-            <input type="text" placeholder="O que você esta procurando?">
+            <input type="text" placeholder="What are you looking for?">
             <button type="submit"><i class="fal fa-search"></i></button>
         </form>
     </div><!--==============================
@@ -280,7 +279,7 @@
                     </li>
 
                 </ul>
-                
+
             </div>
         </div>
     </div><!--==============================
@@ -339,7 +338,7 @@
                         <div class="col-auto">
                             <div class="header-logo">
                                 <!-- <div class="logo-bg" data-bg-src="assets/img/bg/logo_bg_1.png"></div> -->
-                                <a href="index.html"><img src="assets/img/logo_hemoseAzul.png" alt="Mediax" height="auto" width="120rem"></a>
+                                <a href="index.html"><img src="assets/img/logo_hemoseAzul.png" alt="logoHemose" height="auto" width="120rem"></a>
                             </div>
                         </div>
                         <div class="col-auto d-none d-lg-inline-block">
@@ -418,9 +417,9 @@
                                     <span class="badge">5</span>
                                     <i class="far fa-cart-shopping"></i>
                                 </button> -->
-                                <button type="button" class="sideMenuInfo continueLendoBtn">Agende Sua Doação</button>
+                                <button type="button" id="doadorBtn" class="sideMenuInfo continueLendoBtn">Portal do Doador</button>
                                 <button type="button" class="th-menu-toggle d-block d-lg-none"><i class="far fa-bars"></i></button>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -501,7 +500,284 @@ Hero Area
             </div>
         </div>
     </div>
-    <!--======== / Hero Section ========-->
+    <!--======== / Estoque de Sangue ========-->
+    <div class="brand-sec1">
+        <div class="container th-container">
+            <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"420":{"slidesPerView":"3"},"768":{"slidesPerView":"4"},"992":{"slidesPerView":"5"},"1200":{"slidesPerView":"6"},"1400":{"slidesPerView":"8"}}}'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-thin fa-droplet"></i>
+                                <span>AB+</span>
+                            </div>
+                            <span>Crítico</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-thin fa-droplet"></i>
+                                <span>AB-</span>
+                            </div>
+                            <span>Crítico</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-light fa-droplet"></i>
+                                <span>A+</span>
+                            </div>
+                            <span>Alerta</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-light fa-droplet"></i>
+                                <span>A-</span>
+                            </div>
+                            <span>Alerta</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-regular fa-droplet"></i>
+                                <span>B+</span>
+                            </div>
+                            <span>Estável</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-regular fa-droplet"></i>
+                                <span>B-</span>
+                            </div>
+                            <span>Estável</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-solid fa-droplet"></i>
+                                <span>O+</span>
+                            </div>
+                            <span>Bom</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-solid fa-droplet"></i>
+                                <span>O-</span>
+                            </div>
+                            <span>Bom</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-thin fa-droplet"></i>
+                                <span>AB+</span>
+                            </div>
+                            <span>Crítico</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-thin fa-droplet"></i>
+                                <span>AB-</span>
+                            </div>
+                            <span>Crítico</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-light fa-droplet"></i>
+                                <span>A+</span>
+                            </div>
+                            <span>Alerta</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-light fa-droplet"></i>
+                                <span>A-</span>
+                            </div>
+                            <span>Alerta</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-regular fa-droplet"></i>
+                                <span>B+</span>
+                            </div>
+                            <span>Estável</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-regular fa-droplet"></i>
+                                <span>B-</span>
+                            </div>
+                            <span>Estável</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-solid fa-droplet"></i>
+                                <span>O+</span>
+                            </div>
+                            <span>Bom</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box">
+                            <div class="estoqueSangue">
+                                <i class="fa-solid fa-droplet"></i>
+                                <span>O-</span>
+                            </div>
+                            <span>Bom</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===========================================
+     Agendamento do Doador
+     ============================================== -->
+    <div class="space" data-bg-src="assets/img/bg/pattern_bg_7.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="form-shape-wrap">
+                        <div class="form-shape">
+                            <img src="assets/img/gallery/womanDonate.svg" alt="donateImg" id="slideImage" style="height: 62.5vh; width: 13vw;">
+                        </div>
+                        <div class="agendamentos">
+                            <form method="POST" class="faq-form2" id="agendamentoDoacaoIndividual">
+                                <h4 class="box-title text-center">Agende Sua Doação</h4>
+                                <div class="row">
+                                    <div class="form-group col-12">
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Digite seu nome completo">
+                                        <i class="fal fa-user"></i>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu email">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <input type="tel" class="form-control" name="number" id="number" placeholder="Melhor Contato">
+                                        <i class="fal fa-phone"></i>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="CPF">
+                                        <i class="fal fa-user"></i>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <input type="text" class="date-pick form-control" name="date" id="date-pick" placeholder="Date">
+                                        <i class="fal fa-calendar"></i>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <input type="text" class="time-pick form-control" name="time" id="time-pick" placeholder="Time">
+                                        <i class="fal fa-clock"></i>
+                                    </div>
+                                    <div class="form-btn col-12">
+                                        <button class="agendamentoBtn">Agendar</button>
+                                        <span id="alterarParaCampanha" onclick="transicao()">Clique aqui para agendar uma Campanha</span>
+
+                                    </div>
+                                </div>
+                                <p class="form-messages mb-0 mt-3"></p>
+                            </form>
+                            <form class="faq-form2" id="agendamentoCampanha">
+                                <h4 class="box-title text-center">Agende Sua Campanha</h4>
+                                <div class="row">
+                                    <div class="form-group col-12">
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Digite seu nome completo do responsável pela campanha">
+                                        <i class="fal fa-user"></i>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu email do responsável pela campanha">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <input type="tel" class="form-control" name="number" id="number" placeholder="Melhor Contato do responsável pela campanha">
+                                        <i class="fal fa-phone"></i>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Quantidade de Pessoas">
+                                        <i class="fal fa-user"></i>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <input type="text" class="date-pick form-control" name="date" id="date-pick" placeholder="Data">
+                                        <i class="fal fa-calendar"></i>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <select name="turno" id="turno">
+                                            <option value="turno" selected disabled>Selecione o Turno</option>
+                                            <option value="manha">Manhã</option>
+                                            <option value="tarde">Tarde</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="form-btn col-12">
+                                        <button class="agendamentoBtn">Agendar Campanha</button>
+                                        <span id="alterarParaDoacao" onclick="transicao()">Clique aqui para agendar uma Doação Individual</span>
+
+                                    </div>
+                                </div>
+                                <p class="form-messages mb-0 mt-3"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 mt-40 mt-xl-0">
+                    <div class="ps-xxl-5">
+                        <div class="title-area mb-32">
+                            <span class="sub-title"><img src="assets/img/favicons/Favicon_40x40.png" alt="shape">Centro de Hemoterapia de Sergipe</span>
+                            <!-- <h2 class="sec-title">Seja a Esperança de Alguém</h2> -->
+                            <p class="sec-text">A cada doação de sangue, você pode salvar até <span style="color: var(--theme-color); font-weight: bold; font-size: 20px !important;">4 vidas</span>. Agendar sua doação é rápido, fácil e transforma o seu tempo em um ato de amor e solidariedade.</p>
+                        </div>
+                        <h3 class="box-title mb-20">Como Agendar ?</h3>
+                        <div class="contact-process-wrap">
+                            <div class="contact-process">
+                                <div class="box-number">01</div>
+                                <div class="media-body">
+                                    <h3 class="box-title">Escolha seu Horário</h3>
+                                    <p class="box-text" style="color: var(--title-color); width: 25vw !important;">De Segunda à Sexta-Feira das 07:00 às 16:00</p>
+                                </div>
+                            </div>
+                            <div class="contact-process">
+                                <div class="box-number">02</div>
+                                <div class="media-body">
+                                    <h3 class="box-title">Dirija-se ao HEMOSE</h3>
+                                    <p class="box-text" style="color: var(--title-color); width: 25vw !important;">Av. Prof. José Bonifácio Fortes Neto, 400 - Bloco 01 - Capucho CEP: 49095-000 Aracaju/SE</p>
+                                </div>
+                            </div>
+                            <div class="contact-process">
+                                <div class="box-number">03</div>
+                                <div class="media-body">
+                                    <h3 class="box-title">Seja um herói no dia de alguém</h3>
+                                    <p class="box-text" style="color: var(--title-color); width: 25vw !important;">Sua doação pode salvar vidas e trazer esperança a quem mais precisa. Faça a diferença!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--==============================
 About Area  
 ==============================-->
@@ -835,35 +1111,35 @@ Feature Area
     <!--==============================
 Counter Area  
 ==============================-->
-    <div class="z-index-common mt-5 mb-1" data-pos-for="#team-sec" data-sec-pos="bottom-half">
+    <div class="counter-sec2 mt-5" data-overlay="title" data-opacity="9" data-bg-src="assets/img/panoramica.jpg">
         <div class="container">
             <div class="counter-card-wrap">
                 <div class="counter-card">
                     <h2 class="box-number">
-                        <span class="number"><span class="counter-number">69</span>k</span><span class="plus">+</span>
+                        <span class="number"><span class="counter-number">76</span>k</span><span class="plus">+</span>
                     </h2>
-                    <p class="box-text">Satifação dos Pacientes</p>
+                    <p class="box-text">Doações Recebidas</p>
                 </div>
                 <div class="divider"></div>
                 <div class="counter-card">
                     <h2 class="box-number">
-                        <span class="number"><span class="counter-number">236</span></span><span class="plus">+</span>
+                        <span class="number"><span class="counter-number">190</span></span><span class="plus">+</span>
                     </h2>
                     <p class="box-text">Profissionais</p>
                 </div>
                 <div class="divider"></div>
                 <div class="counter-card">
                     <h2 class="box-number">
-                        <span class="number"><span class="counter-number">19</span>k</span><span class="plus">+</span>
+                        <span class="number"><span class="counter-number">29</span>k</span><span class="plus">+</span>
                     </h2>
-                    <p class="box-text">Transfusões</p>
+                    <p class="box-text">Transfusões Realizadas</p>
                 </div>
                 <div class="divider"></div>
                 <div class="counter-card">
                     <h2 class="box-number">
-                        <span class="number"><span class="counter-number">320</span></span><span class="plus">+</span>
+                        <span class="number"><span class="counter-number">450</span></span><span class="plus">+</span>
                     </h2>
-                    <p class="box-text">Atendimentos</p>
+                    <p class="box-text">Campanhas Realizadas</p>
                 </div>
                 <div class="divider"></div>
             </div>
@@ -923,13 +1199,13 @@ Appointment Area
             <div class="appointment-row">
                 <div class="schedule-box">
                     <div class="shape"></div>
-                    <h3 class="box-title">Horário de Funcionameto</h3>
+                    <h3 class="box-title">Funcionameto do HEMOSE</h3>
                     <p class="box-text">Podendo variar em finais de semana ou feriados</p>
-                    <p class="box-timing">Segunda-Feira: <span>07:00 - 13:00</span></p>
-                    <p class="box-timing">Terça-Feira: <span>07:00 - 13:00 </span></p>
-                    <p class="box-timing">Quarta-Feira: <span>07:00 - 13:00</span></p>
-                    <p class="box-timing">Quinta-Feira: <span>07:00 - 13:00</span></p>
-                    <p class="box-timing">Sexta-Feira: <span>07:00 - 13:00</span></p>
+                    <p class="box-timing">Segunda-Feira: <span>07:30 - 17:00</span></p>
+                    <p class="box-timing">Terça-Feira: <span>07:30 - 17:00 </span></p>
+                    <p class="box-timing">Quarta-Feira: <span>07:30 - 17:00</span></p>
+                    <p class="box-timing">Quinta-Feira: <span>07:30 - 17:00</span></p>
+                    <p class="box-timing">Sexta-Feira: <span>07:30 - 17:00</span></p>
                 </div>
                 <div class="form-wrap">
                     <!-- <div class="img-box4">
@@ -941,36 +1217,37 @@ Appointment Area
                         </div>
                     </div> -->
                     <form action="mail.php" method="POST" class="appointment-form">
-                        <h4 class="form-title">Agenda FSPH</h4>
+                        <h4 class="form-title">Agenda de Coletas Externas</h4>
                         <div class="row">
                             <div class="form-group col-12 agendaFundacao">
-                                <span>25/01/25 - Receber Premiação</span>
-                                <button class="euVouBtn">Eu vou!</button>
-                            </div>
-                            <div class="form-group col-12 agendaFundacao">
-                                <span>04/05/25 - Publicado Edital PSS</span>
-                                <button class="euVouBtn">Eu vou!</button>
+                                <span>25/01/25 - Laranjeiras/SE</span>
 
                             </div>
                             <div class="form-group col-12 agendaFundacao">
-                                <span>06/05/2025 - Coleta Externa em Pedrinhas</span>
-                                <button class="euVouBtn">Eu vou!</button>
+                                <span>04/05/25 - Itaporange D'Ajuda/SE</span>
+
 
                             </div>
                             <div class="form-group col-12 agendaFundacao">
-                                <span>06/05/2025 - Coleta Externa em Itabaiana</span>
-                                <button class="euVouBtn">Eu vou!</button>
+                                <span>06/05/2025 - Nossa Senhora do Socorro/SE</span>
+
 
                             </div>
                             <div class="form-group col-12 agendaFundacao">
-                                <span>06/05/2025 - Coleta Externa em Canidé</span>
-                                <button class="euVouBtn">Eu vou!</button>
+                                <span>06/05/2025 - Barra dos Coqueiros/SE</span>
+
 
                             </div>
                             <div class="form-group col-12 agendaFundacao">
-                                <span>06/05/2025 - Coleta Externa em Socorro</span>
-                                <button class="euVouBtn">Eu vou!</button>
+                                <span>06/05/2025 - Canidé do São Francisco/SE</span>
 
+
+                            </div>
+                            <div class="form-group col-12 agendaFundacao">
+                                <span>06/05/2025 - Areia Branca/SE</span>
+                            </div>
+                            <div class="form-group col-12 agendaFundacao">
+                                <span>06/05/2025 - Simão Dias/SE</span>
                             </div>
                             <!-- <div class="form-btn col-12">
                                 <button class="th-btn btn-fw">Agendar</button>
@@ -1347,18 +1624,18 @@ Blog Area
                                 <div class="about-logo">
                                     <a href="index.html"><img src="assets/img/logo 2.png" alt="Mediax"></a>
                                 </div>
-                                <p class="about-text">Fundação de Saúde Parreiras Horta - Cuidando da saúde em cada detalhe.</p>
+                                <p class="about-text">Centro de Hemoterapia de Sergipe - HEMOSE.</p>
                                 <p class="footer-info">
                                     <i class="fal fa-location-dot" style="color: #aaa;"></i>
                                     Av. Prof. José Bonifácio Fortes Neto, 400 - Capucho, Aracaju/SE
                                 </p>
                                 <p class="footer-info">
                                     <i class="fal fa-envelope" style="color: #aaa;"></i>
-                                    <a href="mailto:ouvidoria.fsph@fsph.se.gov.br" class="info-box_link">ouvidoria.fsph@fsph.se.gov.br</a>
+                                    <a href="mailto:ssocial.hemose@fsph.se.gov.br" class="info-box_link">ssocial.hemose@fsph.se.gov.br</a>
                                 </p>
                                 <p class="footer-info">
                                     <i class="fal fa-phone" style="color: #aaa;"></i>
-                                    <a href="tel:+557932346010" class="info-box_link">+55 79 3234-6010</a>
+                                    <a href="tel:+557932258019" class="info-box_link">+55 79 3225-8019</a>
                                 </p>
                             </div>
                         </div>
