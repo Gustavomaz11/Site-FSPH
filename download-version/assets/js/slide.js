@@ -1,6 +1,4 @@
 const slides = document.querySelectorAll('.slide');
-// const prevButton = document.getElementById('prev');
-// const nextButton = document.getElementById('next');
 let currentIndex = 0;
 
 function showSlide(index) {
@@ -31,10 +29,4 @@ function prevSlide() {
 
 // Inicializa o slider
 slides[currentIndex].classList.add('active');
-
-// Eventos dos botões de navegação
-// nextButton.addEventListener('click', nextSlide);
-// prevButton.addEventListener('click', prevSlide);
-
-// Muda o slide automaticamente a cada 5 segundos
 setInterval(nextSlide, 5000);
