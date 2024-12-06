@@ -126,6 +126,7 @@ Version: 1.0.0
 html,
 body {
   scroll-behavior: auto !important;
+  background-color: #f5f5f5;
 }
 
 body {
@@ -5268,7 +5269,7 @@ ol.wp-block-rss {
 
 .header-top {
   padding: 7px 0;
-  background-color: var(--theme-color) ;
+  background-color: var(--theme-color2) ;
   --body-color: #fff;
 }
 
@@ -5758,6 +5759,9 @@ ol.wp-block-rss {
   z-index: 2;
   background-color: var(--title-color);
   overflow: hidden;
+  -webkit-box-shadow: 0px -2px 5px 0px rgba(242,106,108,.3);
+  -moz-box-shadow: 0px -2px 5px 0px rgba(242,106,108,.3);
+  box-shadow: 0px -2px 5px 0px rgba(242,106,108,.3);
 }
 
 .footer-wrapper .th-social a {
@@ -5856,15 +5860,15 @@ ol.wp-block-rss {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 8px;
-  color: var(--theme-color2);
+  color: var(--theme-color);
 }
 
 .footer-info a {
-  color: var(--theme-color2);
+  color: var(--theme-color);
 }
 
 .footer-info a:hover {
-  color: var(--theme-color);
+  color: var(--theme-color2);
 }
 
 .hemoseFooter {
@@ -7663,8 +7667,8 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child > .th-pos
   content: '';
   height: 96px;
   width: 3px;
-  background-image: -webkit-linear-gradient(top, var(--theme-color), transparent);
-  background-image: linear-gradient(to bottom, var(--theme-color), transparent);
+  background-image: -webkit-linear-gradient(top, var(--white-color), transparent);
+  background-image: linear-gradient(to bottom, var(--white-color), transparent);
   position: absolute;
   left: calc(50% - 1.5px);
 }
@@ -12823,9 +12827,6 @@ span.select2-selection.select2-selection--single:focus {
   background-color: var(--title-color);
   padding: 60px;
   border-radius: 30px;
-  /* Large devices */
-  /* Medium devices */
-  /* Small devices */
 }
 
 @media (max-width: 1199px) {
@@ -13222,8 +13223,18 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .brand-sec1 {
-  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
   border-top: 4px solid var(--white-color);
+  margin: 0;
+}
+
+.brand-sec1 p {
+  margin: 0;
+  padding-top: 5px;
+  
 }
 
 /* Brand 2 ---------------------------------- */
@@ -20525,11 +20536,11 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .menu-all-pages-container ul li a {
-  color: var(--theme-color2) !important;
+  color: var(--theme-color) !important;
 }
 
 .menu-all-pages-container ul li a:hover {
-  color: var(--theme-color) !important;
+  color: var(--theme-color2) !important;
 }
 
 .blog-meta {
@@ -20618,11 +20629,14 @@ span.select2-selection.select2-selection--single:focus {
   transform: translate(-35%);
   position: relative; /* Adicionado */
   z-index: 0;
+  transition: .5s ease-in;
 }
 
 #agendamentoDoacaoIndividual {
   position: relative; /* Adicionado */
   z-index: 0;
+  transition: .5s ease-outz n;
+
 }
 
 .agendamentos {
@@ -20653,4 +20667,25 @@ span.select2-selection.select2-selection--single:focus {
 #alterarParaCampanha {
   color: var(--theme-color);
   cursor: pointer;
+}
+
+@media (max-width: 491px) {
+  #estoqueResponsivo .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas de tamanho igual */
+    gap: 5px; /* Espaçamento entre os itens */
+    
+  }
+
+  .swiper-slide {
+    width: 100%; /* Garante que cada item ocupe toda a largura da célula */
+    margin: 0; /* Remove possíveis margens */
+  }
+
+  .brand-box {
+    text-align: center; /* Centraliza o conteúdo de cada slide */
+    padding: 10px; /* Adiciona espaçamento interno */
+    border: 1px solid #ddd; /* Opcional: borda para destacar cada item */
+    border-radius: 8px; /* Deixa os cantos arredondados */
+  }
 }
