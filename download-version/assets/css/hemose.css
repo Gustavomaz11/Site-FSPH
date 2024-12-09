@@ -20689,3 +20689,10 @@ span.select2-selection.select2-selection--single:focus {
     border-radius: 8px; /* Deixa os cantos arredondados */
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .alterarPosicaoImagem {
+    transform: translate(200%);
+    
+  }
+}
