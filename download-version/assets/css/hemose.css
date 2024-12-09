@@ -20696,3 +20696,27 @@ span.select2-selection.select2-selection--single:focus {
     
   }
 }
+
+.estruturaAdm {
+  display: flex;
+  flex-direction: column;
+}
+
+.adms {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+}
+
+.adms .cargo {
+  color: var(--theme-color);
+  font-weight: bold;
+
+}
+
+.email i,
+.telefone i,
+.nome i {
+  margin-right: .3rem;
+}
